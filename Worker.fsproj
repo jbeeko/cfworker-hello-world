@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="Worker.fs" />
+  </ItemGroup>
+  <ItemGroup>
+      <PackageReference Include="Fable.Core" Version="2.0.3" />
+      <PackageReference Include="Fable.Import.Browser" Version="1.3.0" />
+      <PackageReference Include="Fable.Promise" Version="1.0.0" />
+  </ItemGroup>
+</Project>
