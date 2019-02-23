@@ -182,7 +182,7 @@ Then if you visit your site, for example [https://rec-room.io](https://rec-room.
 
 
 ## Scaling and Performance
-This is by no means rigorous, but  using Apache Bench it is possible to get an idea of how well Works perform and scale. 
+This is by no means rigorous, but  using Apache Bench it is possible to get an idea of how well Workers perform and scale. 
 
 From a home network the command `ab -k -n 1000000 -c 100 https://rec-room.io/hello/` showed 2500 requests per second. Running the same command from network with a better connection resulted in about 5000/requests per second with an average response time of 17ms.  
 ```
