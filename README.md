@@ -249,7 +249,8 @@ This repository was developed under OSX. But you should be able to use Windows, 
 * An FSharp editor - I recommend [VSCode](https://code.visualstudio.com/download) with the [Ionide](https://marketplace.visualstudio.com/items?itemName=Ionide.Ionide-fsharp) extension. But MS VisualStudio, JetBrains Rider or a number of others should work.
 * Node and Node Package Manager - [see](https://nodejs.org/en/download/) or via Homebrew
 * Yarn - [see](https://www.npmjs.com/package/yarn) or via Homebrew
-* cloudworker - [see](https://github.com/dollarshaveclub/cloudworker). Install it globally with `npm -g install @dollarshaveclub/cloudworker`. 
+* cloudworker - [see](https://github.com/dollarshaveclub/cloudworker). Install it globally with `npm -g install @dollarshaveclub/cloudworker`. **NOTE:** this would not install for me on widows. `npm` was not able to fund `python`. A suggestion to do this: `npm --add-python-to-path='true' --debug install --global windows-build-tools` did not help. 
+
 
 ### Building and Running
 Clone the repository https://github.com/jbeeko/cfworker-hello-world.
