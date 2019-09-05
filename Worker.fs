@@ -1,8 +1,15 @@
 // Module and import declarations
 module Worker
 open Fable.Core
-open Fable.Import.Browser
-open Fable.Import.JS
+open Fable.Core.JS
+
+open Browser.Types
+open Fetch
+
+type [<AllowNullLiteral>] FetchEvent =
+  inherit Event
+  abstract request: Request with get, set
+  abstract respondWith: response: U2<Promise<Response>, Response> -> Promise<Response>
 
 // JS interop statements
 [<Emit("addEventListener('fetch', $0)")>]
@@ -16,7 +23,7 @@ let newResponse (a:string) (b:string) : Response = jsNative
 // and returns a Promise<Response>
 let private handleRequest (req:Request) =
     promise {
-        let txt = sprintf "Hello from the F# World at: %A" System.DateTime.Now
+        let txt = sprintf "Hello from Fable Conf at: %A" System.DateTime.Now
         return newResponse txt "200"}
 
 
