@@ -7,7 +7,7 @@ var babelConfig = {
             "useBuiltIns": false,
             "loose": true,
             // Use babel-preset-env to generate JS compatible with latest Chrome V8
-            "targets": {"chrome": "73"}
+            "targets": {"chrome": "76"}
     }]]}
 
 module.exports = {
