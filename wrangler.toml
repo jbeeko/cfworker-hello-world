@@ -1,0 +1,9 @@
+#https://developers.cloudflare.com/workers/tooling/wrangler/configuration/
+
+name = "cfworker-hello-world"
+type = "webpack"
+#route = "<only needed if deploying to your domain>"
+#zone_id = "<only needed if deploying to your domain>"
+workers_dev = true
+
+webpack_config = "webpack.config.js"
