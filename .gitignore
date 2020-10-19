@@ -5,4 +5,12 @@ obj/
 bin/
 temp/
 yarn-error.log
+
+#ionide
 symbolCache.db
+
+
+# Wrangler/Workers
+/target
+/dist
+worker/

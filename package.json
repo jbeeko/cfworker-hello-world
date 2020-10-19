@@ -1,8 +1,8 @@
 {
   "name": "fable-cf-worker",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "WebApp using CloudFlare Workers",
-  "repository": "git@github.com:JBeeko/fable-cf-worker.git",
+  "repository": "https://github.com/jbeeko/cfworker-hello-world",
   "author": "Joerg Beekmann",
   "license": "MIT",
   "private": true,
